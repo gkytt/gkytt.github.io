@@ -1,0 +1,119 @@
+<html>
+	<head>
+			<title>
+				Quickwit
+			</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="shortcut icon" href="https://i.imgur.com/0kgh1rG.png" />
+	</head>
+	
+	<body>
+	
+		<div style="background-color: white;">
+			<a href="#test">
+				<h3 class="title">Go to: Mentors and Prototype</h3>
+			</a>
+		</div>
+		
+			<img src="https://i.imgur.com/0kgh1rG.png" width=100" height=auto class="center" />
+			
+			<div>
+				<h1> QUICKWIT <h1>
+			</div>
+				<h2>Find a mentor in any subject!</h2>
+				<h2>Look for a mentor or become one yourself!</h2>
+		
+		<a href="https://facebook.com/">
+			<img id="mentoring-logo" src=https://www.optimind.be/blog2/wp-content/uploads/2016/10/mentoring-pour-site.jpg width="500" height="auto" class="center" />
+		</a>
+		
+		<br>
+		
+		<hr>
+			<h2 id="test">Mentors</h2>
+				<p>See some of our mentors here!</p>
+				<br>
+				
+				<table class="tablecenter">
+					<tr>
+						<th> Name </th>
+						<th> Subject </th>
+					</tr>
+					<tr>
+						<td> Ivo Tamm </td>
+						<td> Chemistry, mathematics </td>
+					</tr>
+					<tr>
+						<td> Anni Vaher </td>
+						<td> Physics, geography </td>
+					</tr>
+				</table>
+				
+				<br>
+				<br>
+					<img src=https://www.christmasconnections.co.uk/wp-content/uploads/sites/2/2016/09/facebook-default-no-profile-pic.jpg width="20" height="auto" class="center"/>
+						<h3> Ivo Tamm </h3>
+						<p id="result" onclick="viewRating()"> Click to see rating </p>
+						<img id="star-1" class="rating" src="https://i.imgur.com/M63wAdH.png" />
+						<img id="star-2"  class="rating" src="https://i.imgur.com/M63wAdH.png" />
+						<img id="star-3" class="rating" src="https://i.imgur.com/M63wAdH.png" />
+						<img id="star-4" class="rating" src="https://i.imgur.com/M63wAdH.png" />
+						<img id="star-5" class="rating" src="https://i.imgur.com/M63wAdH.png" />
+		<hr>
+		
+			<h2>Prototype</h2>
+				<p>Here will be the prototype.</p>
+					<button class="center" type="button" style="background-color: white;" >
+						<a href="https://www.figma.com/proto/CqLh0F2IZCGzBaTcvRRTIx/Quickwit?node-id=1%3A2&scaling=contain"> <h2> Open Figma!</h2> </a> 
+					</button>
+	
+	<script>
+	
+		function viewRating() {
+			var rating = Math.floor(Math.random() * 5) + 1;
+			console.log("testing");
+			document.getElementById("result").innerHTML = rating;
+			
+		if (rating == 1) {
+			document.getElementById("star-1").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-2").src = "https://i.imgur.com/0B3LiEF.png" ;
+			document.getElementById("star-3").src = "https://i.imgur.com/0B3LiEF.png" ;
+			document.getElementById("star-4").src = "https://i.imgur.com/0B3LiEF.png" ;
+			document.getElementById("star-5").src = "https://i.imgur.com/0B3LiEF.png" ;
+			}
+		else if (rating == 2) {
+			document.getElementById("star-1").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-2").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-3").src = "https://i.imgur.com/0B3LiEF.png" ;
+			document.getElementById("star-4").src = "https://i.imgur.com/0B3LiEF.png" ;
+			document.getElementById("star-5").src = "https://i.imgur.com/0B3LiEF.png" ;
+			}
+		else if (rating == 3) {
+			document.getElementById("star-1").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-2").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-3").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-4").src = "https://i.imgur.com/0B3LiEF.png" ;
+			document.getElementById("star-5").src = "https://i.imgur.com/0B3LiEF.png" ;
+			}
+		else if (rating == 4) {
+			document.getElementById("star-1").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-2").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-3").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-4").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-5").src = "https://i.imgur.com/0B3LiEF.png" ;
+			}
+		else if (rating == 5) {
+			document.getElementById("star-1").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-2").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-3").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-4").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-5").src = "https://i.imgur.com/M63wAdH.png" ;
+			}
+		}
+		
+	
+	</script>
+	
+	</body>
+	
+</html>
