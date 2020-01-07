@@ -1,0 +1,41 @@
+p, h1, h2, h3, h4 {
+	font-family: 'Roboto Mono', monospace; text-align: center;
+}
+
+body {
+	background-color: #A8DEF5;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 7%;
+}
+div {
+  width: 200px;
+  border: 15px solid white;
+  padding: 50px;
+  margin: auto;
+}
+
+#mentoring-logo {
+	width: 40%;
+	height: auto;
+}
+
+.rating {
+	width: 3%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table, th, td {
+	border: 1px solid white;
+}
+
+ table.tablecenter {
+	 width: 50px;
+    margin-left:auto; 
+    margin-right:auto;
+  }
