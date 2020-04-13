@@ -1,80 +1,138 @@
+<!DOCTYPE html>
 <html>
-	<head>
-			<title>
-				Quickwit
-			</title>
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="shortcut icon" href="https://i.imgur.com/0kgh1rG.png" />
-	</head>
-	
-	<body>
-	
-		<div style="background-color: white;">
-			<a href="#test">
-				<h3 class="title">Go to: Mentors and Prototype</h3>
-			</a>
-		</div>
-		
-			<img src="https://i.imgur.com/0kgh1rG.png" width=100" height=auto class="center" />
-			
-			<div>
-				<h1> QUICKWIT <h1>
-			</div>
-				<h2>Find a mentor in any subject!</h2>
-				<h2>Look for a mentor or become one yourself!</h2>
-		
-		<a href="https://facebook.com/">
-			<img id="mentoring-logo" src=https://www.optimind.be/blog2/wp-content/uploads/2016/10/mentoring-pour-site.jpg width="500" height="auto" class="center" />
-		</a>
-		
-		<br>
-		
-		<hr>
-			<h2 id="test">Mentors</h2>
-				<p>See some of our mentors here!</p>
-				<br>
-				
-				<table class="tablecenter">
-					<tr>
-						<th> Name </th>
-						<th> Subject </th>
-					</tr>
-					<tr>
-						<td> Ivo Tamm </td>
-						<td> Chemistry, mathematics </td>
-					</tr>
-					<tr>
-						<td> Anni Vaher </td>
-						<td> Physics, geography </td>
-					</tr>
-				</table>
-				
-				<br>
-				<br>
-					<img src=https://www.christmasconnections.co.uk/wp-content/uploads/sites/2/2016/09/facebook-default-no-profile-pic.jpg width="20" height="auto" class="center"/>
-						<h3> Ivo Tamm </h3>
-						<p id="result" onclick="viewRating()"> Click to see rating </p>
-						<img id="star-1" class="rating" src="https://i.imgur.com/M63wAdH.png" />
-						<img id="star-2"  class="rating" src="https://i.imgur.com/M63wAdH.png" />
-						<img id="star-3" class="rating" src="https://i.imgur.com/M63wAdH.png" />
-						<img id="star-4" class="rating" src="https://i.imgur.com/M63wAdH.png" />
-						<img id="star-5" class="rating" src="https://i.imgur.com/M63wAdH.png" />
-		<hr>
-		
-			<h2>Prototype</h2>
-				<p>Here will be the prototype.</p>
-					<button class="center" type="button" style="background-color: white;" >
-						<a href="https://www.figma.com/proto/CqLh0F2IZCGzBaTcvRRTIx/Quickwit?node-id=1%3A2&scaling=contain"> <h2> Open Figma!</h2> </a> 
-					</button>
-	
-	<script>
-	
-		function viewRating() {
-			var rating = Math.floor(Math.random() * 5) + 1;
-			console.log("testing");
-			document.getElementById("result").innerHTML = rating;
-			
-		if (rating == 1) {
+    
+    <head>
+        
+        <title>Quickwit</title>
+        <link href="styles.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="https://i.imgur.com/0kgh1rG.png" />
+    
+    </head>
+    
+    <body>
+        
+        <div id="title">
+            <img src="https://image.flaticon.com/icons/svg/2794/2794995.svg"width=14% />
+            <h1>Quickwit</h1>
+        </div>
+            <h2>Look for a mentor or become one yourself!</h2>
+        <br>
+            <table id="intro">
+                <tr>
+                    <th><img id="tablepic" src="https://image.flaticon.com/icons/svg/2490/2490439.svg" /></th>
+                    <th><img id="tablepic" src="https://image.flaticon.com/icons/svg/2643/2643575.svg" /></th>
+                </tr>
+                <tr>
+                    <td colspan="2">Gain new knowledge and share it with others!</td>
+                </tr>
+            </table>
+        <br>
+        <br>
+        <div id="mentors">
+        <br>
+            <h2 id="heading2">See some of our mentors here:</h2>
+                    <img id="mentorpic" src="https://image.flaticon.com/icons/svg/747/747376.svg" />
+                    <div id="mentorprofile">
+                        <h3>Ivo Tamm</h3>
+                        <h4>Chemistry, mathematics</h4>
+                        <p onclick="viewRatingIvo()" id="result">Click here to see rating</p>
+                            <div id="rating-system">
+							<img id="star-1" class="rating-star" src="https://i.imgur.com/0B3LiEF.png" />
+							<img id="star-2"  class="rating-star" src="https://i.imgur.com/0B3LiEF.png" />
+							<img id="star-3" class="rating-star" src="https://i.imgur.com/0B3LiEF.png" />
+							<img id="star-4" class="rating-star" src="https://i.imgur.com/0B3LiEF.png" />
+							<img id="star-5" class="rating-star" src="https://i.imgur.com/0B3LiEF.png" />
+						  </div>
+                    </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+                    <img id="mentorpic-right" src="https://image.flaticon.com/icons/svg/747/747376.svg" />
+                    <div id="mentorprofile-right">
+                        <h3>Anni Vaher</h3>
+                        <h4>Physics, geography</h4>
+                        <p onclick="viewRatingAnni()" id="resultx">Click here to see rating</p>
+                            <div id="rating-system">
+							<img id="star-1x" class="rating-star" src="https://i.imgur.com/0B3LiEF.png" />
+							<img id="star-2x"  class="rating-star" src="https://i.imgur.com/0B3LiEF.png" />
+							<img id="star-3x" class="rating-star" src="https://i.imgur.com/0B3LiEF.png" />
+							<img id="star-4x" class="rating-star" src="https://i.imgur.com/0B3LiEF.png" />
+							<img id="star-5x" class="rating-star" src="https://i.imgur.com/0B3LiEF.png" />
+						  </div>
+                    </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        
+        <h2 id="heading2">Prototype</h2>
+            <p>Try it on Figma!</p>
+            <button> 
+                <a href="https://www.figma.com/proto/CqLh0F2IZCGzBaTcvRRTIx/Quickwit?node-id=1%3A19&scaling=contain"/>
+                <h2>Click here</h2>
+            </button>
+        
+        <script>
+        
+            function viewRatingAnni() {
+                var rating = Math.floor(Math.random() * 5) + 1;
+                console.log("testing");
+                document.getElementById("resultx").innerHTML = "Rating: "+ rating + "/5";
+                
+            if (rating == 1) {
+			document.getElementById("star-1x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-2x").src = "https://i.imgur.com/0B3LiEF.png" ;
+			document.getElementById("star-3x").src = "https://i.imgur.com/0B3LiEF.png" ;
+			document.getElementById("star-4x").src = "https://i.imgur.com/0B3LiEF.png" ;
+			document.getElementById("star-5x").src = "https://i.imgur.com/0B3LiEF.png" ;
+			}
+		else if (rating == 2) {
+			document.getElementById("star-1x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-2x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-3x").src = "https://i.imgur.com/0B3LiEF.png" ;
+			document.getElementById("star-4x").src = "https://i.imgur.com/0B3LiEF.png" ;
+			document.getElementById("star-5x").src = "https://i.imgur.com/0B3LiEF.png" ;
+			}
+		else if (rating == 3) {
+			document.getElementById("star-1x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-2x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-3x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-4x").src = "https://i.imgur.com/0B3LiEF.png" ;
+			document.getElementById("star-5x").src = "https://i.imgur.com/0B3LiEF.png" ;
+			}
+		else if (rating == 4) {
+			document.getElementById("star-1x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-2x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-3x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-4x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-5x").src = "https://i.imgur.com/0B3LiEF.png" ;
+			}
+		else if (rating == 5) {
+			document.getElementById("star-1x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-2x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-3x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-4x").src = "https://i.imgur.com/M63wAdH.png" ;
+			document.getElementById("star-5x").src = "https://i.imgur.com/M63wAdH.png" ;
+			}
+            }
+        
+        function viewRatingIvo(){
+            var rating = Math.floor(Math.random() * 5) + 1;
+                console.log("testing");
+                document.getElementById("result").innerHTML = "Rating: " + rating + "/5";
+                
+            if (rating == 1) {
 			document.getElementById("star-1").src = "https://i.imgur.com/M63wAdH.png" ;
 			document.getElementById("star-2").src = "https://i.imgur.com/0B3LiEF.png" ;
 			document.getElementById("star-3").src = "https://i.imgur.com/0B3LiEF.png" ;
@@ -109,11 +167,9 @@
 			document.getElementById("star-4").src = "https://i.imgur.com/M63wAdH.png" ;
 			document.getElementById("star-5").src = "https://i.imgur.com/M63wAdH.png" ;
 			}
-		}
-		
-	
-	</script>
-	
-	</body>
-	
+        } 
+            
+        </script>
+        
+    </body>
 </html>

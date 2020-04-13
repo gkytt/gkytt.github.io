@@ -1,41 +1,100 @@
-p, h1, h2, h3, h4 {
-	font-family: 'Roboto Mono', monospace; text-align: center;
-}
-
 body {
-	background-color: #A8DEF5;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 7%;
-}
-div {
-  width: 200px;
-  border: 15px solid white;
-  padding: 50px;
-  margin: auto;
+    background-color: #8fc0a9;
+    text-align: center;
+    font-family: 'DejaVu Sans Mono', monospace;
 }
 
-#mentoring-logo {
-	width: 40%;
-	height: auto;
+h1, h2, h3 {
+    font-family: 'Century Gothic', sans-serif;    
 }
 
-.rating {
-	width: 3%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
+h1 {
+    font-size: 350%;
+    padding: 1%;
 }
 
-table, th, td {
-	border: 1px solid white;
+hr {
+    border:  dashed #faf3dd;
 }
 
- table.tablecenter {
-	 width: 50px;
-    margin-left:auto; 
-    margin-right:auto;
-  }
+button {
+    background-color: #faf3dd;
+    padding: 1%;
+    text-decoration-color: black;
+    cursor: pointer;
+    border:7px solid #c8d5b9;
+    border-radius: 60px;
+}
+
+#title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1%;
+    padding-top: 3%;
+}
+
+#heading2 {
+    font-size: 200%;
+}
+
+#tablepic {
+    height: 20%;
+    padding-bottom: 1%;
+}
+
+#intro {
+    width: 40%;
+    border-radius: 60px;
+    background-color: #faf3dd;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 1%;
+}
+
+#mentors {
+    text-align: center;
+    background-color: #c8d5b9;
+    width: 100%;
+}
+
+#mentorpic {
+    width: 20%;
+    float: left;
+    padding-left: 1%;
+    padding: 2%;
+    border: dashed #faf3dd; 
+}
+
+#result, #resultx {
+    cursor: pointer;
+}
+
+#mentorprofile {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    align-content: flex-start;
+    padding-left: 2%;
+}
+
+#mentorpic-right {
+    float: right;
+    width: 20%;
+    padding-right: 1%;
+    padding: 2%;
+    border: dashed #faf3dd;
+}
+
+#mentorprofile-right {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: right;
+    padding-right: 2%;
+}
+
+.rating-star {
+	width: 7%;
+}
