@@ -10,17 +10,17 @@
     </head>
     
     <body>
-        
+        <div id="topDiv">
         <div id="title">
-            <img src="https://image.flaticon.com/icons/svg/2794/2794995.svg"width=14% />
+            <img id="logo" src="https://image.flaticon.com/icons/png/512/2643/2643499.png"  />
             <h1>Quickwit</h1>
         </div>
             <h2>Look for a mentor or become one yourself!</h2>
         <br>
             <table id="intro">
                 <tr>
-                    <th><img id="tablepic" src="https://image.flaticon.com/icons/svg/2490/2490439.svg" /></th>
-                    <th><img id="tablepic" src="https://image.flaticon.com/icons/svg/2643/2643575.svg" /></th>
+                    <th><img id="tablepic" src="https://image.flaticon.com/icons/png/512/2643/2643522.png" /></th>
+                    <th><img id="tablepic" src="https://image.flaticon.com/icons/png/512/2643/2643491.png" /></th>
                 </tr>
                 <tr>
                     <td colspan="2">Gain new knowledge and share it with others!</td>
@@ -28,10 +28,11 @@
             </table>
         <br>
         <br>
+            </div>
         <div id="mentors">
         <br>
             <h2 id="heading2">See some of our mentors here:</h2>
-                    <img id="mentorpic" src="https://image.flaticon.com/icons/svg/747/747376.svg" />
+                    <img id="mentorpic" src="https://image.flaticon.com/icons/png/512/2643/2643549.png" />
                     <div id="mentorprofile">
                         <h3>Ivo Tamm</h3>
                         <h4>Chemistry, mathematics</h4>
@@ -54,7 +55,7 @@
             <br>
 
 
-                    <img id="mentorpic-right" src="https://image.flaticon.com/icons/svg/747/747376.svg" />
+                    <img id="mentorpic-right" src="https://image.flaticon.com/icons/png/512/2643/2643549.png" />
                     <div id="mentorprofile-right">
                         <h3>Anni Vaher</h3>
                         <h4>Physics, geography</h4>
@@ -73,10 +74,12 @@
             <br>
             <br>
             <br>
+                        <br>
             <br>
-		<br>
-		<br>
-		<br>
+            <br>
+            <br>
+
+            <br>
         </div>
         
         <h2 id="heading2">Prototype</h2>
@@ -88,6 +91,21 @@
         
         <script>
         
+            var mentor = {
+                name: "Ivo",
+                gender: "male",
+                age: 40,
+                rating: 4.7,
+                subject: "Chemistry",
+            };
+            console.log(mentor);
+            
+            var json = JSON.stringify(mentor);
+            console.log(json);
+            var jsobject = JSON.parse(json);
+            console.log(jsobject);
+            
+            
             function viewRatingAnni() {
                 var rating = Math.floor(Math.random() * 5) + 1;
                 console.log("testing");
