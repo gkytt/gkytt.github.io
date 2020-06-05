@@ -72,6 +72,10 @@ hr {
     justify-content: center;
 }
 
+#introduction img {
+	width: 60%;
+}
+
 #introduction1 {
     background-color:antiquewhite;
     width:40%;
