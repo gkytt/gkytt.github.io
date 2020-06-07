@@ -70,17 +70,20 @@ hr {
 #introduction {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
-#introduction img {
-	width: 60%;
+#pic-mentoring {
+    max-width: 70%;
+    height: auto;
+    object-fit:cover;
 }
 
 #introduction1 {
     background-color:antiquewhite;
-    width:40%;
     text-align: right;
     padding:2.5em;
+    height: 60%;
 }
 
 #introduction1 h2 {
